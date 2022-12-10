@@ -1,0 +1,13 @@
+﻿@Model List<Person> persons
+@{
+    ViewData["Title"] = "Database";
+}
+
+<div class="text-center">
+        @foreach(Person p in Model )
+        {
+            <div>
+                @p.id    @p.firstName     @p.lastName    @p.email    @p.country   
+            </div>
+        }
+    </div>

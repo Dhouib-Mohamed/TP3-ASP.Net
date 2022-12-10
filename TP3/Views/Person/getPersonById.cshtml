@@ -1,0 +1,19 @@
+﻿@Model Person person
+@{
+    ViewData["Title"] = "Database";
+}
+
+<div class="text-center">
+    @if (Model==null)
+    {
+        <div>
+            Cet ID est invalide
+        </div>
+    }
+    else
+    {
+    <div>
+            @Model.id    @Model.firstName     @Model.lastName    @Model.email    @Model.country
+        </div>
+    }
+</div>
