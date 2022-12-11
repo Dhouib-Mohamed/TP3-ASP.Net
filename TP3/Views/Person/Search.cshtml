@@ -1,8 +1,19 @@
 ﻿@using (Html.BeginForm("getPerson","Person",FormMethod.Post))
 
 {
-    @Html.TextBox("First Name")
-    @Html.TextBox("Country")
-    <input type="submit"/>
+    <div> First Name
+        <div class="w-75">
+            @Html.TextBox("First Name")
+        </div>
+    </div>
+    
+    <div > Country 
+        <div class="w-75">
+            @Html.TextBox("Country")
+        </div>
+    </div>
+    <div style="margin-top:20">
+        <input type="submit" />
+    </div>
 
 }

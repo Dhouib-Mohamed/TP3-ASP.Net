@@ -19,6 +19,7 @@ namespace TP3.Models
             this.email = (string)reader["email"];
             this.image = (string)reader["image"];
             this.country = (string)reader["country"];
+            Debug.WriteLine(image);
         }
 
     }

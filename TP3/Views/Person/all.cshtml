@@ -1,13 +1,17 @@
-﻿@Model List<Person> persons
-@{
-    ViewData["Title"] = "Database";
-}
+﻿@Model List<Person>
 
-<div class="text-center">
+<div class="row row-cols-1 row-cols-md-6 g-3">
         @foreach(Person p in Model )
         {
-            <div>
-                @p.id    @p.firstName     @p.lastName    @p.email    @p.country   
+            <div class="col">
+                <div class="card">
+                    <img src=@p.image class="card-img-top" alt="Person" height="200" width="200">
+                    <div class="card-body">
+                        <h5 style="font-size:16px">@p.firstName @p.lastName  </h5>
+                        <h5 style="font-size:10px">@p.email  </h5>
+                        <h5 style="font-size:11px">@p.country  </h5>
+                    </div>
+                </div>
             </div>
         }
-    </div>
+</div>

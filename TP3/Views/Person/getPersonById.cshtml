@@ -12,8 +12,15 @@
     }
     else
     {
-    <div>
-            @Model.id    @Model.firstName     @Model.lastName    @Model.email    @Model.country
-        </div>
+        <div class="col w-25 align-self-center">
+                <div class="card">
+                    <img src=@Model.image class="card-img-top" alt="Person" height="200" width="200">
+                        <div class="card-body">
+                    <h5 style="font-size:18px">@Model.firstName @Model.lastName  </h5>
+                    <h5 style="font-size:12px">@Model.email  </h5>
+                    <h5 style="font-size:13px">@Model.country  </h5>
+                        </div>
+                    </div>
+                </div>
     }
 </div>
